@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<!DOCTYPE wap-provisioningdoc PUBLIC "-//WAPFORUM//DTD PROV 1.0//EN"
+"http://www.wapforum.org/DTD/prov.dtd">
+<wap-provisioningdoc version="1.1">
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+  <characteristic type="BOOTSTRAP">
+    <parm name="NAME" value="Nokia VoIP example" /> 
+  </characteristic>
+  <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+  <!-- Nokia Asha Java VoIP API v1.0 settings, w9013                                            -->
+  <!--                                                                                          -->
+  <!-- Settings are described in detail in the Nokia Asha Java VoIP API v1.0 Configuration      -->
+  <!-- Tutorial.                                                                                -->
+  <!-- Parameters that are not defined by default have been put in comments in this example.    -->
+  <!--                                                                                          -->
+  <characteristic type="APPLICATION">
+    <parm name="APPID" value="w9013"/>
+    <parm name="PROVIDER-ID" value="Nokia VoIP example"/>
+    <parm name="NAME" value="Nokia VoIP example"/>
+    <parm name="TO-NAPID" value="INTERNET"/>
+    <parm name="TO-APPREF" value="Nokia_VoIP_example_settings"/>
+    <parm name="SMPORT" value="16384"/>
+    <parm name="EMPORT" value="32766"/>
+    <parm name="MEDIAQOS" value="46"/>
+    <!-- <parm name="NODTMFOOB"/> not defined by default -->
+    <!-- <parm name="DTMFPAYLOADTYPE" value="100"/> not defined by default -->
+    <parm name="SECURECALLPREF" value="0"/>
+    <parm name="RTCP" value="0"/>
+    <parm name="RTCP-XR-VOIP-METRICS" value="0"/>
+    <parm name="MOMAXALERT" value="45"/>
+    <parm name="MTMAXALERT" value="30"/>
+    <!-- <parm name="AMR-FEC" value="1"/> not defined by default -->
+    <!-- <parm name="AMR-WB-FEC" value="1"/> not defined by default -->	
+                                                                  
+    <!-- AMR-WB -->
+    <characteristic type="CODEC">
+      <parm name="MEDIASUBTYPE" value="11"/>
+      <parm name="PRIORITYINDEX" value="0"/>
+      <parm name="OCTET-ALIGN"/>
+      <!-- <parm name="MODE-SET" value="0 1 2 3 4 5 6 7 8"/> not defined by default -->
+      <!-- <parm name="MODE-CHANGE-PERIOD" value="2"/> not defined by default -->
+      <!-- <parm name="MODE-CHANGE-NEIGHBOR" value="0"/> not defined by default -->
+      <!-- <parm name="PTIME" value="20"/> not defined by default -->
+      <parm name="VAD"/>
+    </characteristic>    
+
+    <!-- AMR-NB -->
+    <characteristic type="CODEC">
+      <parm name="MEDIASUBTYPE" value="0"/>
+      <parm name="PRIORITYINDEX" value="1"/>
+      <parm name="OCTET-ALIGN"/>
+      <!-- <parm name="MODE-SET" value="0 1 2 3 4 5 6 7"/> not defined by default -->
+      <!-- <parm name="MODE-CHANGE-PERIOD" value="2"/> not defined by default -->
+      <!-- <parm name="MODE-CHANGE-NEIGHBOR" value="0"/> not defined by default -->
+      <!-- <parm name="PTIME" value="20"/> not defined by default -->
+      <parm name="VAD"/>
+    </characteristic>    
+
+   <!-- iLBC with default values -->
+    <characteristic type="CODEC"> 
+      <parm name="MEDIASUBTYPE" value="1"/>
+      <parm name="PRIORITYINDEX" value="2"/>
+      <!-- <parm name="PTIME" value="20"/> not defined by default -->
+      <parm name="VAD"/>
+      <!-- <parm name="MODE" value="30"/> not defined by default -->
+    </characteristic>
+
+    <!-- G.729 with default values -->
+    <characteristic type="CODEC"> 
+      <parm name="MEDIASUBTYPE" value="10"/>
+      <parm name="PRIORITYINDEX" value="3"/>
+      <!-- <parm name="PTIME" value="10"/> not defined by default -->
+      <parm name="ANNEXB"/>
+    </characteristic>
+
+    <!-- G711 a-law with default values -->
+    <characteristic type="CODEC"> 
+      <parm name="MEDIASUBTYPE" value="3"/>
+      <parm name="PRIORITYINDEX" value="4"/>
+      <!-- <parm name="PTIME" value="20"/> not defined by default -->
+      <parm name="VAD"/>
+    </characteristic>
+    
+    <!-- G711 u-law with default values -->
+    <characteristic type="CODEC"> 
+      <parm name="MEDIASUBTYPE" value="4"/>			
+      <parm name="PRIORITYINDEX" value="5"/>
+      <!-- <parm name="PTIME" value="20"/> not defined by default -->
+      <parm name="VAD"/>
+    </characteristic>
+
+    <!-- GSM-EFR with default values -->
+    <characteristic type="CODEC"> 
+      <parm name="MEDIASUBTYPE" value="12"/>
+      <parm name="PRIORITYINDEX" value="6"/>
+      <!-- <parm name="PTIME" value="20"/> not defined by default -->
+      <parm name="VAD"/>
+    </characteristic>
+
+    <!-- GSM-FR with default values -->
+    <characteristic type="CODEC">  
+      <parm name="MEDIASUBTYPE" value="13"/>
+      <parm name="PRIORITYINDEX" value="7"/>
+      <!-- <parm name="PTIME" value="20"/> not defined by default -->
+      <parm name="VAD"/>
+    </characteristic>
+
+    <!-- G.726-40 with default values -->
+    <characteristic type="CODEC"> 
+      <parm name="MEDIASUBTYPE" value="5"/>
+      <parm name="PRIORITYINDEX" value="8"/>
+      <!-- <parm name="PTIME" value="20"/> not defined by default -->
+      <parm name="VAD"/>
+      <!-- <parm name="G726RFCPAYLOADFORMAT"/> not defined by default -->
+    </characteristic>
+
+    <!-- G.726-32 with default values -->
+    <characteristic type="CODEC"> 
+      <parm name="MEDIASUBTYPE" value="6"/>
+      <parm name="PRIORITYINDEX" value="9"/>
+      <!-- <parm name="PTIME" value="20"/> not defined by default -->
+      <parm name="VAD"/>
+      <!-- <parm name="G726RFCPAYLOADFORMAT"/> not defined by default -->
+    </characteristic>
+
+    <!-- G.726-24 with default values -->
+    <characteristic type="CODEC"> 
+      <parm name="MEDIASUBTYPE" value="7"/>
+      <parm name="PRIORITYINDEX" value="10"/>
+      <!-- <parm name="PTIME" value="20"/> not defined by default -->
+      <parm name="VAD"/>
+      <!-- <parm name="G726RFCPAYLOADFORMAT"/> not defined by default -->
+    </characteristic>
+
+    <!-- G.726-16 with default values -->
+    <characteristic type="CODEC"> 
+      <parm name="MEDIASUBTYPE" value="8"/>
+      <parm name="PRIORITYINDEX" value="11"/>
+      <!-- <parm name="PTIME" value="20"/> not defined by default -->
+      <parm name="VAD"/>
+      <!-- <parm name="G726RFCPAYLOADFORMAT"/> not defined by default -->
+    </characteristic>
+
+   <!-- CN Comfort noise with default values -->
+    <characteristic type="CODEC"> 
+      <parm name="MEDIASUBTYPE" value="9"/>
+      <parm name="PRIORITYINDEX" value="12"/>
+    </characteristic>
+             
+ </characteristic>
+
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+  <!-- NAT/FW settings, w902E -->
+  <characteristic type="APPLICATION">
+    <parm name="APPID" value="w902E"/>
+    <parm name="NAME" value="NAT/FW Traversal settings"/>
+    <characteristic type="NW">
+      <parm name="APPREF" value="Example_NAT_FW_settings"/>
+      <parm name="DOMAIN" value="example.com"/>
+      <parm name="STUNSRVADDR" value="stunserver.domain.com"/>
+      <parm name="STUNSRVPORT" value="3478"/>
+      <parm name="NATREFRESHTCP" value="30"/>
+      <parm name="NATREFRESHUDP" value="20"/>
+    </characteristic>
+    <characteristic type="NATIAP">
+      <parm name="TO-NAPID" value="INTERNET"/>
+      <parm name="REFRESHTCP" value="1200"/>
+      <parm name="REFRESHUDP" value="28"/>
+      <parm name="STUNRETRANSMIT" value="250"/>
+    </characteristic>
+  </characteristic>
+
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+  <!-- SIP settings, w9010  -->
+  <characteristic type="APPLICATION">
+    <parm name="APPID" value="w9010"/>
+    <parm name="APPREF" value="Nokia_VoIP_example_settings"/>
+    <parm name="PROVIDER-ID" value="Nokia VoIP example"/>
+    <parm name="TO-NAPID" value="INTERNET"/>
+    <parm name="PTYPE" value="IETF"/>
+    <parm name="PUID" value="sip:<!-- SIP_USERNAME -->@<!-- SIP_REGISTRAR -->"/>    
+    <parm name="APROTOCOL" value="UDP" />
+    <parm name="SIGQOS" value="40"/>
+    <!-- <parm name="TIMER-T1" value="800"/> not defined by default -->
+    <!-- <parm name="TIMER-T2" value="6400"/> not defined by default -->
+    <!-- Outbound settings -->
+    <characteristic type="APPADDR">
+      <parm name="LR"/>
+      <parm name="ADDR" value="<!-- SIP_REGISTRAR -->"/>
+      <characteristic type="PORT">
+        <parm name="PORTNBR" value="5060" />
+    </characteristic>   
+    </characteristic>
+    <!-- Outbound credentials -->
+    <characteristic type="APPAUTH">
+      <parm name="AAUTHNAME" value="<!-- SIP_USERNAME -->"/>
+      <parm name="AAUTHSECRET" value="<!-- SIP_PASSWORD -->"/>
+      <parm name="AAUTHDATA" value=""/>
+      <parm name="AAUTHTYPE" value="HTTP-DIGEST" />
+    </characteristic>   
+    <!-- Registrar location and credentials -->
+    <characteristic type="RESOURCE">
+      <parm name="URI" value="<!-- SIP_REGISTRAR -->"/>
+      <parm name="AAUTHNAME" value="<!-- SIP_USERNAME -->"/>
+      <parm name="AAUTHSECRET" value="<!-- SIP_PASSWORD -->"/>
+      <parm name="AAUTHDATA" value=""/>
+      <parm name="AAUTHTYPE" value="HTTP-DIGEST" />
+    </characteristic>
+  </characteristic>
+
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->  
+</wap-provisioningdoc>
