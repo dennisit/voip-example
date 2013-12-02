@@ -238,6 +238,7 @@ public class CallView
             public void commandAction(Command c, Displayable d) {
                 if (c.getCommandType() == Command.OK) {
                     call.end();
+                    callCounter.cancel();
                     viewManager.popView();
                 }
                 else if (c.getCommandType() == Command.CANCEL) {
@@ -258,6 +259,7 @@ public class CallView
         
         public void onClick() {
             call.end();
+            callCounter.cancel();
         }
     }
 

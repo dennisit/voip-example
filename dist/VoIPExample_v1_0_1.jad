@@ -1,9 +1,9 @@
 MIDlet-1: VoIPExample,/voipexample-icon.png,com.nokia.example.voip.VoIPExample
-MIDlet-Jar-Size: 243287
-MIDlet-Jar-URL: VoIPExample.jar
+MIDlet-Jar-Size: 268372
+MIDlet-Jar-URL: VoIPExample_v1_0_1.jar
 MIDlet-Name: VoIPExample
 MIDlet-Vendor: Vendor
-MIDlet-Version: 1.0
+MIDlet-Version: 1.0.1
 MicroEdition-Configuration: CLDC-1.1
 MicroEdition-Handler-1: com.nokia.example.voip.VoIPExample, application/vnd.nokia.voip.audio.call
 MicroEdition-Handler-1-ID: com.nokia.example.voip.VoIPExample
