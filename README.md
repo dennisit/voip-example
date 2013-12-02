@@ -94,4 +94,5 @@ https://github.com/nokia-developer/voip-example/blob/master/LICENSE.TXT
 7. Version history
 -------------------------------------------------------------------------------
 
-* 1.0 The initial release.
+* 1.0.1 The timer for displaying call duration is canceled upon call termination.
+* 1.0   The initial release.
