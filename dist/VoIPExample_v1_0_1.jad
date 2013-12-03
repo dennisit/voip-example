@@ -1,5 +1,5 @@
 MIDlet-1: VoIPExample,/voipexample-icon.png,com.nokia.example.voip.VoIPExample
-MIDlet-Jar-Size: 268372
+MIDlet-Jar-Size: 268097
 MIDlet-Jar-URL: VoIPExample_v1_0_1.jar
 MIDlet-Name: VoIPExample
 MIDlet-Vendor: Vendor
